@@ -1,48 +1,46 @@
-# ── Core ML ───────────────────────────────────────────────────────────────────
-scikit-learn
-xgboost
-lightgbm
-numpy
-pandas
-scipy
+# Core ML
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.13
 
-# ── Explainability ────────────────────────────────────────────────────────────
-shap
+# ML models
+xgboost>=2.0
+lightgbm>=4.3
 
-# ── Visualisation ─────────────────────────────────────────────────────────────
-plotly
-matplotlib
-seaborn
+# Explainability
+shap>=0.45
+
+# Visualization
+plotly>=5.22
+matplotlib>=3.8
+seaborn==0.12.2
 kaleido
 
-# ── Dashboard ─────────────────────────────────────────────────────────────────
-streamlit
+# Dashboard
+streamlit>=1.35
 
-# ── Data profiling ────────────────────────────────────────────────────────────
-ydata-profiling
+# Data profiling
+ydata-profiling==4.6.4
 openpyxl
-# ── LLM — Groq (free, recommended) ───────────────────────────────────────────
+
+# LLM
 groq
 langchain
 langchain-groq
 langchain-community
 
-# ── LLM — Google Gemini (optional fallback) ───────────────────────────────────
+# Gemini fallback
 google-generativeai
 
-# ── RAG / Vector store ────────────────────────────────────────────────────────
+# RAG
 faiss-cpu
 sentence-transformers
 langchain-google-genai
 
-# ── PDF export ────────────────────────────────────────────────────────────────
+# PDF
 reportlab
 Pillow
 
-# ── Model deployment ──────────────────────────────────────────────────────────
-fastapi
-uvicorn
-pydantic
-
-# ── Utils ─────────────────────────────────────────────────────────────────────
+# Utils
 python-dotenv
