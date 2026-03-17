@@ -1,49 +1,48 @@
 # ── Core ML ───────────────────────────────────────────────────────────────────
-scikit-learn==1.4.2
-xgboost==2.0.3
-lightgbm==4.3.0
-numpy==1.26.4
-pandas==2.2.2
-scipy==1.13.0
+scikit-learn
+xgboost
+lightgbm
+numpy
+pandas
+scipy
 
 # ── Explainability ────────────────────────────────────────────────────────────
-shap==0.45.1
+shap
 
 # ── Visualisation ─────────────────────────────────────────────────────────────
-plotly==5.22.0
-matplotlib==3.8.4
-seaborn==0.13.2
-kaleido==0.2.1
+plotly
+matplotlib
+seaborn
+kaleido
 
 # ── Dashboard ─────────────────────────────────────────────────────────────────
-streamlit==1.35.0
+streamlit
 
 # ── Data profiling ────────────────────────────────────────────────────────────
-ydata-profiling==4.6.4
-openpyxl==3.1.2
-
+ydata-profiling
+openpyxl
 # ── LLM — Groq (free, recommended) ───────────────────────────────────────────
-groq==0.9.0
-langchain==0.2.16
-langchain-groq==0.1.9
-langchain-community==0.2.16
+groq
+langchain
+langchain-groq
+langchain-community
 
 # ── LLM — Google Gemini (optional fallback) ───────────────────────────────────
-google-generativeai==0.8.3
+google-generativeai
 
 # ── RAG / Vector store ────────────────────────────────────────────────────────
-faiss-cpu==1.8.0
-sentence-transformers==3.0.1
-langchain-google-genai==1.0.10
+faiss-cpu
+sentence-transformers
+langchain-google-genai
 
 # ── PDF export ────────────────────────────────────────────────────────────────
-reportlab==4.2.2
-Pillow==10.3.0
+reportlab
+Pillow
 
 # ── Model deployment ──────────────────────────────────────────────────────────
-fastapi==0.111.0
-uvicorn==0.30.1
-pydantic==2.7.1
+fastapi
+uvicorn
+pydantic
 
 # ── Utils ─────────────────────────────────────────────────────────────────────
-python-dotenv==1.0.1
+python-dotenv
