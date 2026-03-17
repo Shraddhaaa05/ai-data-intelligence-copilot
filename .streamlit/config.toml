@@ -6,10 +6,11 @@ textColor = "#1e2a3b"
 font = "sans serif"
 
 [server]
-maxUploadSize = 200
-enableXsrfProtection = true
-enableCORS = true
 headless = true
+address = "localhost"
+port = 8501
+enableCORS = true
+enableXsrfProtection = true
 
 [browser]
 gatherUsageStats = false

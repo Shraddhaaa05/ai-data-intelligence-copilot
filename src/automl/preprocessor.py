@@ -67,12 +67,20 @@ def preprocess(df: pd.DataFrame, target: str, schema) -> PreprocessResult:
 
     # ✅ FIX #1: Train/test split FIRST (before any transformations!)
     # This prevents data leakage - test set must be completely unseen
+    # Safe stratification check
+    stratify_col = None
+    if schema.problem_type == "classification":
+        class_counts = y.value_counts()
+    if class_counts.min() >= 2:
+        stratify_col = y
+
     X_train_raw, X_test_raw, y_train, y_test = train_test_split(
-        X, y, 
-        test_size=TEST_SIZE, 
-        random_state=RANDOM_STATE,
-        stratify=y if schema.problem_type == "classification" else None,
-    )
+    X,
+    y,
+    test_size=TEST_SIZE,
+    random_state=RANDOM_STATE,
+    stratify=stratify_col,
+)
     
     logger.info(f"Split: train={len(X_train_raw)}, test={len(X_test_raw)}")
 
